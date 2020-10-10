@@ -1,4 +1,4 @@
 # Tikipeter Repository
 
-Enter Kodi File Manager:
+Enter into Kodi File Manager:
 https://tikipeter.github.io/
