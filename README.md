@@ -1,1 +1,1 @@
-Personal use only.
+https://tikipeter.github.io
