@@ -8,3 +8,7 @@
 4.0.21
 - Added new method to determine widget status and hopefully prevent home crashes when reuse invoker is True
 - New show_text code to remove 2+ second pause before large text blocks are shown. Moved from textbox to listitems.
+
+4.0.22
+- Added a check for free space before starting download. Help needed from AI to get correct calls per OS. Cannot test across OS's though.
+- Bugs in code that assigns cache expiry for movies and tv shows fixed, and those functions re-written to better reflect the current state of the media being cached.
