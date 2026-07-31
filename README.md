@@ -12,3 +12,7 @@
 4.0.22
 - Added a check for free space before starting download. Help needed from AI to get correct calls per OS. Cannot test across OS's though.
 - Bugs in code that assigns cache expiry for movies and tv shows fixed, and those functions re-written to better reflect the current state of the media being cached.
+
+4.0.23/24
+- Goodbye the rest of Trakt!
+- Re-wrote download class.
