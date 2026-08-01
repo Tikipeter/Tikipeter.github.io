@@ -16,3 +16,6 @@
 4.0.23/24
 - Goodbye the rest of Trakt!
 - Re-wrote download class.
+
+4.0.25
+- Removed support for Real Debrid. So long old friend.
