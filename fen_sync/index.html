@@ -83,29 +83,29 @@
     </div>
 
     <script>
-        // Robust parameter extraction handling trailing slashes or clean URLs
-        const searchParams = window.location.search;
-        const urlParams = new URLSearchParams(searchParams);
+        // 1. Read URL params normally
+        const urlParams = new URLSearchParams(window.location.search);
         let userCode = urlParams.get('code');
 
-        // Fallback check if URL structure parsing was disrupted by the slash
+        // 2. Fallback check: If code is null, forcefully parse the raw address string via regex
         if (!userCode) {
-            const match = window.location.href.match(/[?&]code=([^&#]*)/);
-            userCode = match ? match[1] : '000000';
+            const regexMatch = window.location.href.match(/[?&]code=([^&#]*)/);
+            userCode = regexMatch ? decodeURIComponent(regexMatch[1]) : '000000';
         }
         
+        // Render code safely into the box
         document.getElementById('pairing-code').innerText = userCode;
 
+        // Clipboard push script
         function copyCode() {
             navigator.clipboard.writeText(userCode);
             const btn = document.querySelector('.btn');
             btn.innerText = 'Copied!';
-            btn.style.backgroundColor = '#2ecc71'; 
+            btn.style.backgroundColor = '#2ecc71'; /* Confirmation success green */
             btn.style.color = '#ffffff';
             setTimeout(() => {
                 btn.innerText = 'Copy Code';
-                // Fixed JavaScript crash by using valid color string variables
-                btn.style.backgroundColor = '#ffffff';
+                btn.style.backgroundColor = '#ffffff'; /* Replaced broken var syntax with raw hex */
                 btn.style.color = '#131921';
             }, 2000);
         }
