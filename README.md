@@ -17,5 +17,7 @@
 - Goodbye the rest of Trakt!
 - Re-wrote download class.
 
-4.0.25
+4.0.25/26
 - Removed support for Real Debrid. So long old friend.
+- Added some metadata to TV Show Progress Manager.
+- Slight changes to Extras and People custom windows.
