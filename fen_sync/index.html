@@ -6,7 +6,6 @@
     <title>FenSync Pairing</title>
     <style>
         :root {
-            /* Hand-picked hex color variables matched directly from your addon screenshot */
             --bg-color: #131921;
             --card-bg: #1c2430;
             --text-primary: #ffffff;
@@ -84,24 +83,30 @@
     </div>
 
     <script>
-        // Extract parameter value (?code=XXXXXX) from mobile browser URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const userCode = urlParams.get('code') || '000000';
+        // Robust parameter extraction handling trailing slashes or clean URLs
+        const searchParams = window.location.search;
+        const urlParams = new URLSearchParams(searchParams);
+        let userCode = urlParams.get('code');
+
+        // Fallback check if URL structure parsing was disrupted by the slash
+        if (!userCode) {
+            const match = window.location.href.match(/[?&]code=([^&#]*)/);
+            userCode = match ? match[1] : '000000';
+        }
         
-        // Inject string to the structured text box
         document.getElementById('pairing-code').innerText = userCode;
 
-        // Clipboard push execution script
         function copyCode() {
             navigator.clipboard.writeText(userCode);
             const btn = document.querySelector('.btn');
             btn.innerText = 'Copied!';
-            btn.style.backgroundColor = '#2ecc71'; /* Clean confirmation success green */
+            btn.style.backgroundColor = '#2ecc71'; 
             btn.style.color = '#ffffff';
             setTimeout(() => {
                 btn.innerText = 'Copy Code';
-                btn.style.backgroundColor = var(--text-primary);
-                btn.style.color = var(--bg-color);
+                // Fixed JavaScript crash by using valid color string variables
+                btn.style.backgroundColor = '#ffffff';
+                btn.style.color = '#131921';
             }, 2000);
         }
     </script>
