@@ -21,3 +21,8 @@
 - Removed support for Real Debrid. So long old friend.
 - Added some metadata to TV Show Progress Manager.
 - Slight changes to Extras and People custom windows.
+
+4.0.27
+- Fixed Easynews thumbnails:
+      VIDEO SEARCH THUMBS: thumbnail = 'https://th.easynews.com/thumbnails-%s/pr-%s.jpg' % (post_hash[0:3], post_hash[:-4])
+      IMAGE SEARCH THUMBS: thumbnail = 'https://th.easynews.com/thumbnails-%s/sm-%s.jpg' % (post_hash[0:3], post_hash[:-4])
