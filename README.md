@@ -1,10 +1,11 @@
-4.0.29
+4.0.29/30
 - Re tooling of Downloads Manager dialog. Now includes download speed and estimated remaining time until finished.
 - Added settings for max speed and max simultaneous downloads.
 - Added new queue manager to manage all downloads, not just pack downloads.
 - Began switching online backup service to new name "Fen Online", and began adding other services besides watched history i.e. Personal Lists coming soon.
 - Re-added Watched Indicators setting so as to choose between Fen Local or Fen Online.
-- Added ability to open settings at certain menu item using 'menu_focus' and 'submenu_focus'
+- Added ability to open settings at certain menu item using 'menu_focus' and 'submenu_focus'.
+- Switched Update to check all online versions available, rather than the 'fen_version' text file.
 
 4.0.28
 - Added online backup sync service for watched and progress statuses.
