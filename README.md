@@ -1,4 +1,5 @@
-4.0.29/30
+4.0.29/30/31
+- Added Personal Lists to Fen Online.
 - Re tooling of Downloads Manager dialog. Now includes download speed and estimated remaining time until finished.
 - Added settings for max speed and max simultaneous downloads.
 - Added new queue manager to manage all downloads, not just pack downloads.
