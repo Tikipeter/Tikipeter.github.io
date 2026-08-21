@@ -1,3 +1,6 @@
+4.0.36
+- Rewrite of Fen Online Service.
+
 4.0.29/30/31
 - Added Personal Lists to Fen Online.
 - Re tooling of Downloads Manager dialog. Now includes download speed and estimated remaining time until finished.
