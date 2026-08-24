@@ -1,3 +1,7 @@
+4.0.38/39
+- Fix OC cloud scraper.
+- More changes to download function.
+
 4.0.36/37
 - Rewrite of Fen Online Service.
 
