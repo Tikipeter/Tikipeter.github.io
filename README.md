@@ -1,3 +1,6 @@
+4.0.41
+- Mainly involving fixing Fen Online related issues.
+
 4.0.38/39/40
 - Fix OC cloud scraper.
 - More changes to download function.
