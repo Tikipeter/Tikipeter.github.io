@@ -1,3 +1,8 @@
+4.0.42
+- Again reworked downloader. Some AI used for code for establishing remaining storage on a user's system etc, as well as the actual download loop, which is over my head and replaces code written by someone many years ago (we should all thank spoyser).
+- Added list editor dialog with built in buttons for move up/down and enable/disable. Perfect for settings like enabled and sorted extras items or context menu items.
+- As a result, re-added custom context menu throughout media lists.
+
 4.0.41
 - Mainly involving fixing Fen Online related issues.
 
