@@ -1,4 +1,4 @@
-4.0.44
+4.0.44/45
 - Refactoring of List Editor dialog to handle more situations.
 - Yet again reworked downloader.
 
